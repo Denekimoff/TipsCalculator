@@ -1,0 +1,240 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+  font-size: 16px;
+  color: hsl(184, 14%, 56%);
+  font-family: Space mono;
+}
+.container {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  max-width: 60rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(184, 14%, 56%);
+  background-color: hsl(183, 100%, 15%);
+  background-color: hsl(186, 14%, 43%);
+  background-color: hsl(189, 41%, 97%);
+  background-color: hsl(172, 67%, 45%);
+  background-color: hsl(185, 41%, 84%);
+}
+.container__svg {
+  margin-bottom: 1rem;
+}
+.container__app {
+  background-color: #fff;
+  width: 50rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-flow: row wrap;
+  border-radius: 1rem;
+}
+.app__data {
+  width: 50%;
+  padding: 0.3rem 2rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.app__bill {
+  margin-bottom: 1.5rem;
+}
+.app__title {
+  padding: 0.2rem 0.5rem;
+}
+.app__bill-input {
+  position: relative;
+  height: 2rem;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 0.3rem;
+}
+.app__bill-input img {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  z-index: 2;
+  transform: translateY(-50%);
+  height: 1rem;
+}
+.app__bill-total {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-right: 1.7rem;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: inherit;
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+  font-family: Space mono;
+  text-align: end;
+  border-radius: 0.3rem;
+}
+.app__bill-total::placeholder {
+  color:hsl(184, 14%, 56%);
+}
+.app__tip {
+  margin-bottom: 1.5rem;
+}
+.app__tip-all {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-size: 1.5rem;
+}
+.app__tip-choice {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  color: #fff;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.app__tip-input {
+  position: relative;
+  text-align: center;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 0.4rem;
+}
+.app__tip-input input {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+padding: 0.5rem;
+border: none;
+border-radius: 0.4rem;
+background-color: inherit;
+text-align: center;
+font-size: 1.5rem;
+font-family: Space mono;
+cursor: pointer;
+}
+.app__tip-input input::placeholder {
+  font-family: Space mono;
+  font-size: 1.5rem;
+  color:hsl(184, 14%, 56%);
+}
+.app__people {
+}
+.app__people-input {
+  position: relative;
+  height: 2rem;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 0.3rem;
+}
+.app__people-input img {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  height: 1rem;
+}
+.app__people-total {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-right: 1rem;
+  width: 100%;
+  height: 100%;
+  border: none;
+  background-color: inherit;
+  font-size: 24px;
+  color: hsl(183, 100%, 15%);
+  font-family: Space mono;
+  text-align: end;
+  border-radius: 0.3rem;
+
+}
+.app__people-total::placeholder {
+  color:hsl(184, 14%, 56%);
+}
+.app__display {
+  margin: 0 auto;
+  width: 50%;
+  padding: 1rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 0.7rem;
+}
+.app__info {
+  margin: 1rem 0 2rem 0;
+}
+.app__info-amount {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.app__info-title {
+  display: flex;
+  flex-flow: column;
+}
+.app__info-title .app__title{
+  color: #fff;
+}
+.app__subtitle {
+}
+.app__view-amount {
+  font-size: 2.5rem;
+  color: hsl(165, 64%, 50%);
+}
+.app__info-total {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.app__view-total {
+  font-size: 2.5rem;
+  color: hsl(165, 64%, 50%);
+}
+.app__reset {
+  padding: 0.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: hsl(172, 67%, 45%);
+  border-radius: 0.6rem;
+}
+
+@media (max-width: 850px) {
+  .container__app {
+    max-width: 30rem;
+  }
+  .app__data {
+width: 70%;
+  }
+  .app__display {
+    width: 70%;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 12px;
+  }
+  .container__app {
+    max-width: 100%;
+  }
+  .app__data {
+    max-width: 100%;
+    padding: 0;
+  }
+  .app__display {
+    max-width: 100%;
+  }
+}
