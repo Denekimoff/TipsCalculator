@@ -74,6 +74,7 @@ html {
   border: none;
   background-color: inherit;
   font-size: 24px;
+  font-family: Space mono, Arial, Helvetica, sans-serif;
   color: hsl(183, 100%, 15%);
   font-family: Space mono;
   text-align: end;
@@ -97,6 +98,7 @@ html {
   max-height: 100%;
   padding: 0.5rem 1rem;
   text-align: center;
+  font-family: Space mono, Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
   color: #fff;
   background-color: hsl(183, 100%, 15%);
@@ -164,6 +166,7 @@ html {
   height: 100%;
   border: none;
   background-color: inherit;
+  font-family: Space mono, Arial, Helvetica, sans-serif;
   font-size: 24px;
   color: hsl(183, 100%, 15%);
   font-family: Space mono;
@@ -200,8 +203,7 @@ html {
 .app__info-title .app__title{
   color: #fff;
 }
-.app__subtitle {
-}
+
 .app__view-amount {
   font-size: 2.5rem;
   color: hsl(165, 64%, 50%);
