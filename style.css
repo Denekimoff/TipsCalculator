@@ -8,9 +8,10 @@
 html {
   font-size: 16px;
   color: hsl(184, 14%, 56%);
-  font-family: Space mono;
+  font-family: Space mono, Arial, Helvetica, sans-serif;
 }
 .container {
+  height: 100vh;
   margin: 0 auto;
   padding: 2rem 1rem;
   max-width: 60rem;
@@ -67,7 +68,7 @@ html {
   position: absolute;
   left: 0;
   top: 0;
-  padding-right: 1.7rem;
+  padding: 0 1.8rem;
   width: 100%;
   height: 100%;
   border: none;
@@ -92,40 +93,52 @@ html {
   font-size: 1.5rem;
 }
 .app__tip-choice {
+  max-width: 6rem;
+  max-height: 100%;
   padding: 0.5rem 1rem;
   text-align: center;
+  font-size: 1.5rem;
   color: #fff;
   background-color: hsl(183, 100%, 15%);
+  outline: none;
+  border: none;
   border-radius: 0.4rem;
   cursor: pointer;
+  transition: 0.3s;
 }
-.app__tip-input {
-  position: relative;
-  text-align: center;
-  background-color: hsl(189, 41%, 97%);
+
+.app__tip-choice:hover {
+  background-color: hsl(172, 67%, 45%);
+}
+.app__tip-choice:last-child {
   border-radius: 0.4rem;
+  border: none;
+  text-align: center;
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(189, 41%, 97%);
+  font-family: Space mono;
+  font-size: 1.5rem;
+  cursor: pointer;
 }
-.app__tip-input input {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-padding: 0.5rem;
-border: none;
-border-radius: 0.4rem;
-background-color: inherit;
-text-align: center;
-font-size: 1.5rem;
-font-family: Space mono;
-cursor: pointer;
+.app__tip-choice:last-child:hover {
+  background-color: hsl(180, 86%, 92%);
 }
-.app__tip-input input::placeholder {
+.app__tip-choice:last-child::placeholder {
   font-family: Space mono;
   font-size: 1.5rem;
   color:hsl(184, 14%, 56%);
 }
-.app__people {
+.--active {
+  background-color: hsl(172, 81%, 55%);
+}
+.--active:hover {
+  background-color: hsl(172, 81%, 55%);
+}
+.--active:last-child {
+  background-color: hsl(172, 81%, 55%);
+}
+.--active:last-child:hover {
+  background-color: hsl(172, 81%, 55%);
 }
 .app__people-input {
   position: relative;
@@ -206,11 +219,18 @@ cursor: pointer;
 .app__reset {
   padding: 0.5rem;
   text-align: center;
+  color: hsl(183, 100%, 15%);
   text-transform: uppercase;
   background-color: hsl(172, 67%, 45%);
   border-radius: 0.6rem;
+  transition: 0.3s;
 }
-
+.app__reset:hover {
+  background-color: hsl(172, 82%, 55%);
+}
+.app__reset:active {
+  background-color: hsl(172, 100%, 61%);
+}
 @media (max-width: 850px) {
   .container__app {
     max-width: 30rem;

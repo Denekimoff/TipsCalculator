@@ -17,8 +17,6 @@
   <title>Tip Calculator App</title>
 </head>
 
-
-
 <body>
   <div class="container">
     <div class="container__svg">
@@ -33,25 +31,25 @@
           <div class="app__title">Bill</div>
           <div class="app__bill-input">
             <img src="./assets/img/icon-dollar.svg" alt="Dollars">
-            <input type="text" placeholder="0" class="app__bill-total">
+            <input type="text" placeholder="0" class="app__bill-total" maxlength="10">
           </div>
         </div>
         <div class="app__tip">
           <div class="app__title">Select Tip %</div>
           <div class="app__tip-all">
-            <div class="app__tip-choice">5%</div>
-            <div class="app__tip-choice">10%</div>
-            <div class="app__tip-choice">15%</div>
-            <div class="app__tip-choice">25%</div>
-            <div class="app__tip-choice">50%</div>
-            <div class="app__tip-input"><input type="text" placeholder="Edit"></div>
+            <input class="app__tip-choice" type="text" value="5%" readonly>
+            <input class="app__tip-choice" type="text" value="10%" readonly>
+            <input class="app__tip-choice" type="text" value="15%" readonly>
+            <input class="app__tip-choice" type="text" value="25%" readonly>
+            <input class="app__tip-choice" type="text" value="50%" readonly>
+            <input class="app__tip-choice" type="text" maxlength="3" placeholder="Edit">
           </div>
         </div>
         <div class="app__people">
           <div class="app__title">Number of people</div>
           <div class="app__people-input">
             <img src="./assets/img/icon-person.svg" alt="Person">
-            <input type="number" min="1" placeholder="0" class="app__people-total">
+            <input class="app__people-total" type="number" min="1" max="30" value="1">
           </div>
         </div>
       </div>
@@ -62,14 +60,14 @@
               <p class="app__title">Tip amount</p>
               <span class="app__subtitle">/person</span>
             </div>
-            <div class="app__view-amount">$0</div>
+            <div class="app__view-amount">$<span>0</span></div>
           </div>
           <div class="app__info-total">
             <div class="app__info-title">
               <p class="app__title">Total</p>
               <span class="app__subtitle">/person</span>
             </div>
-            <div class="app__view-total">$0</div>
+            <div class="app__view-total">$<span>0</span></div>
           </div>
         </div>
         <div class="app__reset">Reset</div>
