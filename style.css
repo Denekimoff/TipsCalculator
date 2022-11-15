@@ -215,8 +215,10 @@ html {
   align-items: center;
 }
 .app__view-total {
+  max-width: 100%;
   font-size: 2.5rem;
   color: hsl(165, 64%, 50%);
+  overflow: hidden;
 }
 .app__reset {
   padding: 0.5rem;
